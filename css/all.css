@@ -1,0 +1,88 @@
+:root {
+  --green: #006838;
+  --white: #ffffff;
+  --neutral-gray: #333333;
+
+  .hidden {
+    display: none;
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', 'Open Sans', sans-serif;
+}
+
+.main-logo {
+  width: 50%;
+  min-width: 250px;
+}
+
+.hero-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+    font-family: 'Times New Roman', 'Gerorgia', Times, serif;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.section-left {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+}
+
+.section-right {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+}
+
+/* TODO: ratio of text to photo */
+
+.section-text {
+  line-height: 3rem;
+  font-size: x-large;
+}
+
+.photo {
+  width: 500px;
+  height: 500px;
+  border: var(--neutral-gray);
+}
+
+.cta-button {
+  background-color: var(--green);
+  color: var(--white);
+  padding: calc(1rem + 4px);
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta-button:hover, .cta-button:focus {
+  text-decoration: none;
+  border: 4px solid var(--neutral-gray);
+  padding: 1rem;
+}
+
+.cta-button:visited {
+  text-decoration: none;
+}
+
+/* TODO: Dynamic loading on scrolling */
+/* TODO: Mobile view */
+
+/* Utility */
+.hidden {
+  display: none;
+}

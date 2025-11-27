@@ -1,0 +1,6 @@
+#footer {
+    background-color: var(--neutral-gray);
+    color: var(--white);
+    padding: 1rem;
+    margin-top: 2rem;
+}
