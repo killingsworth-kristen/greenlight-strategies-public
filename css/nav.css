@@ -16,17 +16,12 @@
 }
 
 .nav-link {
-    text-decoration: none;
-    padding: 0.5rem;
-
+    color: var(--white);
 }
 
-.nav-link:hover {
-    text-decoration: underline;
-}
-
-.nav-link:visited {
-    text-decoration: none;
+.nav-item {
+    flex: 1;
+    text-align: center;
 }
 
 @media (max-width: 500px) {

@@ -1,6 +1,7 @@
 :root {
   --green: #006838;
   --white: #ffffff;
+  --light-gray: #D6D6D6;
   --neutral-gray: #333333;
 
   .hidden {
@@ -38,6 +39,14 @@
   display: flex;
   align-items: center;
   margin: 2rem;
+}
+
+.section-left > div {
+  margin-left: 2rem;
+}
+
+.section-right > div {
+  margin-right: 2rem;
 }
 
 .section-right {
@@ -83,6 +92,18 @@
 /* TODO: Mobile view */
 
 /* Utility */
+.animated-element {
+    animation: fade-in-out linear;
+    animation-timeline: view(); /* or scroll(self) for a specific container */
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    40% { opacity: 1; }
+    60% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 .hidden {
   display: none;
 }
