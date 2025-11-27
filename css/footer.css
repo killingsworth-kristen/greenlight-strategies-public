@@ -4,3 +4,9 @@
     padding: 1rem;
     margin-top: 2rem;
 }
+
+@media (max-width: 500px) {
+    footer > h6 {
+        text-align: center;
+    }
+}

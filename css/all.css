@@ -18,6 +18,13 @@
     font-family: 'Helvetica', 'Open Sans', sans-serif;
 }
 
+.title {
+    font-family: 'Times New Roman', 'Gerorgia', Times, serif;
+    font-size: 4rem;
+    margin: 1rem;
+    text-align: center;
+}
+
 .main-logo {
   width: 50%;
   min-width: 250px;
@@ -30,9 +37,20 @@
 }
 
 .headline {
-    font-family: 'Times New Roman', 'Gerorgia', Times, serif;
-    font-size: 4rem;
-    margin-bottom: 1rem;
+  font-family: 'Times New Roman', 'Gerorgia', Times, serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.section-basic {
+  margin: 2rem;
+}
+
+.section-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section-left {
@@ -106,4 +124,69 @@
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .main-logo {
+    width: 100%;
+  }
+
+  .section-basic {
+    margin: 2rem;
+  }
+
+  .section-center {
+    margin: 2rem;
+  }
+
+  .section-left {
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  .section-left > div {
+    margin-left: 0;
+  }
+
+  .section-right {
+    flex-direction: column-reverse;
+    margin: 2rem;
+  }
+
+  .section-right > div {
+    margin-right: 0;
+  }
+
+  img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .section-left > img, .section-right > img {
+    margin-bottom: 2rem;
+  }
+
+  .headline {
+    font-size: 2rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  @keyframes fade-in-out {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  #footer > h6 {
+    text-align: center;
+  }
 }
