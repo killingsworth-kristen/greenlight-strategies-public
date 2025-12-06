@@ -1,0 +1,10 @@
+/* .nominate-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.extra-info {
+    font-size: 1rem;
+    color: red;
+}

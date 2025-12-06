@@ -73,11 +73,10 @@
   margin: 2rem;
 }
 
-/* TODO: ratio of text to photo */
-
 .section-text {
   line-height: 3rem;
   font-size: x-large;
+  margin: 0 2rem;
 }
 
 .photo {
@@ -106,8 +105,18 @@
   text-decoration: none;
 }
 
-/* TODO: Dynamic loading on scrolling */
-/* TODO: Mobile view */
+.chat-button {
+  position: sticky;
+  bottom: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: end;
+  z-index: 1000;
+}
+
+.chat-button > .cta-button {
+  border-radius: 100px;
+}
 
 /* Utility */
 .animated-element {
@@ -126,7 +135,31 @@
   display: none;
 }
 
+.navbar, .container-fluid {
+  padding: 0;
+}
+
+.active {
+  border-bottom: solid var(--white) 5px;
+  /* border-top: solid var(--white) 5px; */
+}
+
+/* Navbar break to hamburger */
+@media (max-width: 991px) {
+    .active {
+    background-color: var(--white);
+    color: var(--green);
+  }
+
+  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .nav-link {
+    color: var(--green);
+  }
+}
+
+/* Mobile View */
 @media (max-width: 500px) {
+
+
   .title {
     font-size: 2rem;
   }
